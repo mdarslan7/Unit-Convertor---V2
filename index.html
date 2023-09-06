@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor | Solo Project</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Local CSS Stylesheet -->
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="info-text">
+        <h1 class="info-text-heading">Unit Convertor</h1>
+        <p>This is one of my solo projects from @Scrimba 's 'Front-End Developer Path'.</p>
+    </div>
+
+    <div>
+        <div class="convertor-container">
+
+            <header class="upper-container">
+                <h2 class="main-heading">Metric/Imperial unit conversion</h2>
+                <input class="number-input" id="input" type="text" placeholder="0" 
+                onchange="UpdateData()">
+                <label class="input-label" for="input">Enter a number</label>
+            </header>
+        
+            <div class="lower-container">
+                <div class="result-container">
+                    <p class="units-heading">Length (Meter/Feet)</p>
+                    <div id="meter-foot-conv" class="calculation"></div> 
+                </div>
+        
+                <div class="result-container">
+                    <p class="units-heading">Volume (Liters/Gallons)</p>
+                    <div id="liter-gallon-conv" class="calculation"></div> 
+                </div>
+        
+                <div class="result-container">
+                    <p class="units-heading">Mass (Kilograms/Pounds)</p>
+                    <div id="kilo-pound-conv" class="calculation"></div>
+                </div>
+            </div>
+            
+            <p class="made-by-line">Made with ❤️ by <a href="https://twitter.com/Md_Arslan7">Arslan</a></p>
+
+        </div>
+    </div>
+    
+    <!-- Script -->
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>

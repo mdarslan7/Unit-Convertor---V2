@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content : space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #141E27;
+}
+
+
+h1, h2 {
+    margin: 0;
+    color: white;
+    padding: 15px;
+}
+
+
+/* Info Text */
+
+.info-text {
+    color: white;
+    text-align: left;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.info-text-heading {
+    padding: 0;
+}
+
+/* Convertor's Outside Container */
+
+.convertor-container {
+    width: 550px;
+    height: 556px;
+    background: #FBF7EE;
+    margin-right: 10px;
+    border: 6.5px solid darkgray;
+}
+
+
+/* Upper-container */
+
+.upper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-image: linear-gradient(
+    45deg,
+    hsl(238deg 99% 67%) 0%,
+    hsl(267deg 84% 61%) 11%,
+    hsl(290deg 70% 52%) 22%,
+    hsl(307deg 100% 43%) 33%,
+    hsl(318deg 100% 47%) 44%,
+    hsl(327deg 100% 50%) 56%,
+    hsl(335deg 100% 50%) 67%,
+    hsl(342deg 100% 50%) 78%,
+    hsl(349deg 100% 50%) 89%,
+    hsl(0deg 100% 50%) 100%
+);
+}
+
+.main-heading {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.number-input {
+    padding: 0;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 95px;
+    width: 200px;
+    background-color: transparent;
+    box-shadow: 4px 2px white;
+    outline: 0;
+}
+
+.number-input::placeholder {
+    color: aliceblue;
+    opacity: 0.4;
+}
+
+.input-label {
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Lower Container */
+
+.lower-container {
+    padding: 15px 0 15px;
+    background-color: white;
+}
+
+.result-container {
+    padding: 8px;
+}
+
+.units-heading {
+    font-weight: bold;
+}
+
+
+/* Made By Line */
+
+.made-by-line {
+    font-size: 1.2rem;
+    margin: 25px auto 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+/* Media Query */
+
+@media (max-width: 900px) {
+
+    body {
+        flex-direction: column;
+        margin: 22px;
+    }
+
+    .info-text {
+        margin: 250px 0 60px;
+    }
+
+    .convertor-container {
+        height: 556px;
+        width: 480px;
+    }
+
+}
